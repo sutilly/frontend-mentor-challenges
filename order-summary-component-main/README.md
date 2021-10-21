@@ -14,7 +14,7 @@ Users should be able to:
 
 ## Links
 
-- Live Site URL: [Add live site URL here](https://sutilly-frontend-mentor-order-summary.netlify.app/)
+[Live Site URL](https://sutilly-frontend-mentor-order-summary.netlify.app/)
 
 ## Built with
 
