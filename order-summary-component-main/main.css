@@ -8,6 +8,7 @@
     --clr-neutral-pale-blue: hsl(225, 100%, 98%);
     --clr-neutral-desaturated-blue: hsl(224, 23%, 55%);
     --fs-main: 16px;
+    --fs-mobile: 15px;
     --ff-main: 'Red Hat Display', sans-serif;
 }
 
@@ -24,7 +25,7 @@ html {
 body {
     font-family: var(--ff-main);
     min-height: 100vh;
-    background: var(--clr-primary-pale-blue) url('images/pattern-background-mobile.svg') no-repeat top;
+    background: var(--clr-primary-pale-blue) url('images/pattern-background-desktop.svg') no-repeat top;
     background-size: contain;
 }
 
@@ -87,16 +88,26 @@ button {
 a {
     color: var(--clr-primary-bright-blue);
     font-weight: 700;
+    text-decoration: underline;
 }
+
 a:hover {
     color: var(--clr-primary-violet);
     text-decoration: none;
-    font-weight: 700;
 }
 
 .text-bold {
     font-weight: 700;
     color: var(--clr-neutral-dark-blue);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
 
 /* Card */
@@ -112,6 +123,7 @@ a:hover {
 
 .card_header {
     background-image: url('images/illustration-hero.svg');
+    background-position: center;
     height: 13.75rem;
 
 }
@@ -161,21 +173,30 @@ a:hover {
 .payment-info-icon {
     height: 3rem;
     width: 3rem;
-    background-image: url('images/icon-music.svg');
 }
 
 
 /* Media Queries */
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (max-width: 1439px) {
+
+    html {
+        font-size: var(--fs-mobile);
+    }
+
     body {
-        font-family: var(--ff-main);
-        min-height: 100vh;
-        background: var(--clr-primary-pale-blue) url('images/pattern-background-desktop.svg') no-repeat top;
+        background: var(--clr-primary-pale-blue) url('images/pattern-background-mobile.svg') no-repeat top;
         background-size: contain;
+    }
+
+    .card_body {
+        padding: 1.325rem;
+    }
+
+    .card_body-payment {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 }
 
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
