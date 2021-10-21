@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --clr-primary-pale-blue: hsl(225, 100%, 94%);
+    --clr-primary-bright-blue: hsl(245, 75%, 52%);
+    --clr-primary-violet: hsl(245, 83%, 68%);
+    --clr-neutral-dark-blue: hsl(223, 47%, 23%);
+    --clr-neutral-pale-blue: hsl(225, 100%, 98%);
+    --clr-neutral-desaturated-blue: hsl(224, 23%, 55%);
+    --fs-main: 16px;
+    --ff-main: 'Red Hat Display', sans-serif;
+}
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: var(--fs-main);
+}
+
+body {
+    font-family: var(--ff-main);
+    min-height: 100vh;
+    background: var(--clr-primary-pale-blue) url('images/pattern-background-mobile.svg') no-repeat top;
+    background-size: contain;
+}
+
+/* Utilities */
+
+.container {
+    max-width: 86.7%;
+    width: 28.125rem;
+    margin: auto auto;
+    min-height: 100vh;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+
+/* UI Elements */
+
+button {
+    padding: 0.93rem;
+    font-weight: 900;
+    font-size: 0.9375rem;
+    cursor: pointer;
+    border-radius: 0.6875rem;
+}
+
+.btn-primary {
+    color: white;
+    background-color: var(--clr-primary-bright-blue);
+    outline: none;
+    border: none;
+    box-shadow: 0 1.25rem 1.5rem rgba(13, 48, 189, 0.19);
+}
+
+.btn-primary:hover {
+    background-color: var(--clr-primary-violet);
+}
+
+.btn-neutral {
+    outline: none;
+    border: none;
+    background: none;
+    color: var(--clr-neutral-desaturated-blue);
+}
+
+.btn-neutral:hover {
+    color: var(--clr-neutral-dark-blue);
+}
+
+/* Text Utilities */
+
+a {
+    color: var(--clr-primary-bright-blue);
+    font-weight: 700;
+}
+a:hover {
+    color: var(--clr-primary-violet);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.text-bold {
+    font-weight: 700;
+    color: var(--clr-neutral-dark-blue);
+}
+
+/* Card */
+
+.card {
+    background-color: white;
+    box-shadow: 0 2.5rem 2.5rem -1.25rem rgba(13, 48, 189, 0.1518);
+    border-radius: 1.25rem;
+    text-align: center;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+.card_header {
+    background-image: url('images/illustration-hero.svg');
+    height: 13.75rem;
+
+}
+
+.card_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 29.8125rem;
+    padding: 3rem;
+}
+
+.card_body-title {
+    font-size: 1.75rem;
+    font-weight: 900;
+    color: var(--clr-neutral-dark-blue);
+}
+
+.card_body-text {
+    line-height: 1.625rem;
+    color: var(--clr-neutral-desaturated-blue);
+    font-weight: 500;
+}
+
+.card_body-payment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6.125rem;
+    background-color: var(--clr-neutral-pale-blue);
+    border-radius: 0.6875rem;
+    padding: 1.5625rem;
+    margin-top: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.payment-info-block {
+    display: flex;
+    flex-direction: row;
+}
+
+.payment-info-text {
+    margin-left: 1.1875rem;
+    color: var(--clr-neutral-desaturated-blue);
+}
+
+.payment-info-icon {
+    height: 3rem;
+    width: 3rem;
+    background-image: url('images/icon-music.svg');
+}
+
+
+/* Media Queries */
+
+@media only screen and (min-width: 1440px) {
+    body {
+        font-family: var(--ff-main);
+        min-height: 100vh;
+        background: var(--clr-primary-pale-blue) url('images/pattern-background-desktop.svg') no-repeat top;
+        background-size: contain;
+    }
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
