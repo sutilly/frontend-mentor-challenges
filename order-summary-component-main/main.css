@@ -44,11 +44,6 @@ body {
     align-items: center;
 }
 
-.flex-between {
-    display: flex;
-    justify-content: center;
-    align-content: space-between;
-}
 
 /* UI Elements */
 
@@ -56,6 +51,7 @@ button {
     padding: 0.93rem;
     font-weight: 900;
     font-size: 0.9375rem;
+    line-height: 1.25rem;
     cursor: pointer;
     border-radius: 0.6875rem;
 }
@@ -72,29 +68,7 @@ button {
     background-color: var(--clr-primary-violet);
 }
 
-.btn-neutral {
-    outline: none;
-    border: none;
-    background: none;
-    color: var(--clr-neutral-desaturated-blue);
-}
-
-.btn-neutral:hover {
-    color: var(--clr-neutral-dark-blue);
-}
-
 /* Text Utilities */
-
-a {
-    color: var(--clr-primary-bright-blue);
-    font-weight: 700;
-    text-decoration: underline;
-}
-
-a:hover {
-    color: var(--clr-primary-violet);
-    text-decoration: none;
-}
 
 .text-bold {
     font-weight: 700;
@@ -124,6 +98,7 @@ a:hover {
 .card_header {
     background-image: url('images/illustration-hero.svg');
     background-position: center;
+    background-size: cover;
     height: 13.75rem;
 
 }
@@ -131,13 +106,14 @@ a:hover {
 .card_body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     height: 29.8125rem;
     padding: 3rem;
 }
 
 .card_body-title {
     font-size: 1.75rem;
+    line-height: 2.3125rem;
     font-weight: 900;
     color: var(--clr-neutral-dark-blue);
 }
@@ -146,6 +122,7 @@ a:hover {
     line-height: 1.625rem;
     color: var(--clr-neutral-desaturated-blue);
     font-weight: 500;
+    margin-top: 1rem;
 }
 
 .card_body-payment {
@@ -175,6 +152,30 @@ a:hover {
     width: 3rem;
 }
 
+a.payment-change-link  {
+    color: var(--clr-primary-bright-blue);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+a:hover.payment-change-link {
+    color: var(--clr-primary-violet);
+    text-decoration: none;
+}
+
+a.link-neutral {
+    color: var(--clr-neutral-desaturated-blue);
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 700;
+    line-height: 1.25rem;
+    margin-top: 2rem;
+}
+
+a:hover.link-neutral {
+    color: var(--clr-neutral-dark-blue);
+}
+
 
 /* Media Queries */
 
@@ -187,6 +188,10 @@ a:hover {
     body {
         background: var(--clr-primary-pale-blue) url('images/pattern-background-mobile.svg') no-repeat top;
         background-size: contain;
+    }
+
+    .card_header {
+        height: 10rem;
     }
 
     .card_body {
