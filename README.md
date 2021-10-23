@@ -1,10 +1,10 @@
-#Collection of Frontend Mentor solutions 
+# Collection of Frontend Mentor solutions 
 
-This repository is a collection of my sollutions to [Frontend Mentor](https://www.frontendmentor.io) challenges. The challenges are designed to help you improve your coding skills by building realistic projects.
+This repository is a collection of my solutions to [Frontend Mentor](https://www.frontendmentor.io) challenges. The challenges are designed to help you improve your coding skills by building realistic projects.
 
 There is a subdirectory for each challenge in this repository.
 
-##Overview of Challenges and Solutions
+## Overview of Challenges and Solutions
 
 | Technologies | Challenge | Live Site | Code |  
 | --- | -- |  -- | --  | 
