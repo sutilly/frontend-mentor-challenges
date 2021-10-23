@@ -2,7 +2,8 @@
 
 This repository is a collection of my solutions to [Frontend Mentor](https://www.frontendmentor.io) challenges. The challenges are designed to help you improve your coding skills by building realistic projects.
 
-There is a subdirectory for each challenge in this repository.
+There is a subdirectory for each challenge in this repository. 
+Work in progress :construction:
 
 ## Overview of Challenges and Solutions
 
