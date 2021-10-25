@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap');
+
+:root {
+    /* Colors */
+    --clr-primary-dark: #4D96A9;
+    --clr-primary-medium: #71C0D4;
+    --clr-primary-light: #8FE3F9;
+    --clr-secondary-dark: #855FB1;
+    --clr-secondary-medium: #B18BDD;
+    --clr-secondary-light: #D9B8FF;
+    --clr-neutral-grey-dark: #28283D;
+    --clr-neutral-grey-light: #87879D;
+    --clr-neutral-white: #FAFAFA;
+    /* Typography */
+    --ff-main: 'Red Hat Display', sans-serif;
+}
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-main);
+    font-size: 1.125rem;
+    line-height: 1.625;
+    width: 100vw;
+    background-color: var(--clr-neutral-white);
+    overflow-x: hidden;
+}
+
+
+/* Typography */
+
+h1, h2 {
+    color: var(--clr-neutral-grey-dark)
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+    font-weight: 900;
+}
+
+p {
+    color: var(--clr-neutral-grey-light)
+}
+
+.overline {
+    font-size: 1rem;
+    line-height: 1.625;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    color: var(--clr-primary-dark);
+}
+
+.text-primary-light {
+    color: var(--clr-primary-light);
+}
+
+.text-secondary-light {
+    color: var(--clr-secondary-light);
+}
+
+/* UI Elements */
+
+/* Divider */
+
+.section_divider {
+    position: absolute;
+    height: 8.75rem;
+    left: 50%;
+    top: -7rem;
+    z-index: 300;
+}
+
+.section_divider-vl {
+    border-left: 1px solid var(--clr-neutral-grey-light);
+    opacity: 0.25;
+    height: 5.25rem;
+}
+
+.section_divider-counter {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background: var(--clr-neutral-white);
+    border: 1px solid rgba(135, 135, 157, 0.25);
+    color: var(--clr-neutral-grey-light);
+    font-weight: 900;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button */
+
+.btn {
+    border-radius: 1.8125rem;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    font-size: 1rem;
+    line-height: 1.625;
+    border: none;
+    cursor: pointer;
+    padding: 0.9375rem;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn-sm {
+    width: 8.6875rem;
+}
+
+.btn-md {
+    width: 12rem;
+}
+
+.btn-primary {
+    background-color: var(--clr-primary-dark);
+}
+
+.btn-primary:hover {
+    background-color: var(--clr-primary-medium);
+}
+
+.btn-secondary {
+    background-color: var(--clr-secondary-dark);
+}
+
+.btn-secondary:hover {
+    background-color: var(--clr-secondary-medium);
+}
+
+/* Utilities */
+.container {
+    margin: 0 auto;
+    width: 1100px;
+    max-width: 90%;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10.5625rem;
+}
+
+img.logo {
+    height: 1.75rem;
+}
+
+/* Hero Section */
+
+#hero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero_image-mobile-tablet {
+    display: none;
+}
+
+.hero_image-left {
+    flex-basis: 28.125rem;
+    background-image: url('assets/desktop/image-hero-left.png');
+    background-position: left -2rem top 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.hero_text {
+    max-width: 33.75rem;
+    width: 90%;
+    margin-top: 2.875rem;
+    text-align: center;
+}
+
+.hero_text p {
+    margin: 2.125rem 0;
+}
+
+.hero_image-right {
+    flex-basis: 28.125rem;
+    background-image: url('assets/desktop/image-hero-right.png');
+    background-position: right -2rem bottom 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.hero_btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* About Section */
+
+#about {
+    text-align: center;
+    margin-top: 14rem;
+    padding: 5.625rem 0 11.3125rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 15.125rem auto;
+    grid-column-gap: 1.7rem;
+    grid-row-gap: 5rem;
+    position: relative;
+}
+
+.about_img {
+    border-radius: 0.5rem;
+}
+
+#about_img-1 {
+    background: url('assets/desktop/image-woman-in-videocall.jpg') no-repeat top center;
+    background-size: cover;
+}
+
+#about_img-2 {
+    background: url('assets/desktop/image-women-videochatting.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#about_img-3 {
+    background: url('assets/desktop/image-men-in-meeting.jpg') no-repeat top center;
+    background-size: cover;
+}
+
+#about_img-4 {
+    background: url('assets/desktop/image-man-texting.jpg') no-repeat top center;
+    background-size: cover;
+}
+
+.about_text {
+    grid-column: 2/span 2;
+    grid-row: 2/span 1;
+}
+
+.about_text h2 {
+    margin-top: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.about_text p {
+    margin-top: 2rem;
+}
+
+/* Footer */
+
+footer {
+    background: url('assets/desktop/image-footer.jpg') no-repeat top center;
+    background-size: cover;
+    height: 19.25rem;
+    position: relative;
+}
+
+.footer_overlay {
+    position: absolute;
+    background-color: var(--clr-primary-dark);
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    z-index: 100;
+}
+
+.footer_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    z-index: 200;
+}
+
+footer h2 {
+    flex-basis: 21.875rem;
+    color: var(--clr-neutral-white);
+}
+
+footer p {
+    flex-basis: 21.875rem;
+    color: var(--clr-neutral-white);
+}
+
+footer button {
+    flex-basis: 12rem;
+}
+
+
+/* Media Queries*/
+
+@media screen and (max-width: 1024px) {
+
+    h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    header {
+        height: 8.75rem;
+    }
+
+    #hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero_image-right, .hero_image-left {
+        display: none;
+    }
+
+    .hero_image-mobile-tablet {
+        background-image: url('assets/tablet/image-hero.png');
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 18.9375rem;
+        width: 100%;
+        display: block;
+    }
+
+    #about {
+        margin-top: 11.6875rem;
+        grid-template-columns: repeat(4, minmax(10.25rem, 1fr));
+        grid-template-rows: 9.75rem auto;
+        grid-column-gap: 0.6rem;
+        grid-row-gap: 2.875rem;
+    }
+
+    .about_text {
+        grid-column: 1/span 4;
+        padding-top: 2.875rem;
+    }
+
+    .about_text h2 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    footer {
+        background: url('assets/tablet/image-footer.jpg') no-repeat top center;
+        height: 26.75rem;
+    }
+
+    .footer_text {
+        text-align: center;
+        justify-content: center;
+        align-items: start;
+        flex-wrap: wrap;
+    }
+
+    footer h2 {
+        flex-basis: 100%;
+        margin-top: 5.6875rem;
+    }
+
+    footer p {
+        flex-basis: 100%;
+        padding: 0 4rem 0 4rem;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    header {
+        height: 8.125rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        line-height: 2.25rem;
+    }
+
+    #hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero_image-mobile-tablet {
+        height: 9.5rem;
+    }
+
+    .hero_btn-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about {
+        margin-top: 11.6875rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 8.9375rem 8.9375rem auto;
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 1.5rem;
+    }
+
+    .about_text {
+        grid-column: 1/span 2;
+        grid-row: 3/span 1;
+    }
+
+    .about_text h2 {
+        padding-left: 2.625rem;
+        padding-right: 2.625rem;
+    }
+
+    footer {
+        background: url('assets/mobile/image-footer.jpg') no-repeat top center;
+        background-size: 100%;
+    }
+
+    footer p {
+        flex-basis: 100%;
+        padding: 0;
+    }
+
+}
