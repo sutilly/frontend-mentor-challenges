@@ -11,3 +11,4 @@ Work in progress :construction:
 | --- | -- |  -- | --  | 
 | HTML--CSS      |  Stats preview card component | [Live Site](https://sutilly-frontend-mentor-stats-preview.netlify.app/) | [Code](https://github.com/sutilly/frontend-mentor-challenges/tree/main/stats-preview-card-component-main) |
 | HTML--CSS      | Order summary component  | [Live Site](https://sutilly-frontend-mentor-order-summary.netlify.app/) | [Code](https://github.com/sutilly/frontend-mentor-challenges/tree/main/order-summary-component-main) |
+| HTML--CSS      | Meet Landing Page  | [Live Site](https://sutilly-frontend-mentor-meet-landing-page.netlify.app/) | [Code](https://github.com/sutilly/frontend-mentor-challenges/tree/main/meet-landing-page-main) |
