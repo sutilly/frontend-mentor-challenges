@@ -13,14 +13,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./assets/meet-landing-page-solution-screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
-## My process
+- [Solution URL](https://github.com/sutilly/frontend-mentor-challenges/tree/main/meet-landing-page-main)
+- [Live Site URL](https://sutilly-frontend-mentor-meet-landing-page.netlify.app)
 
 ### Built with
 
