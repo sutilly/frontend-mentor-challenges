@@ -435,7 +435,7 @@ footer button {
 
     footer {
         background: url('assets/mobile/image-footer.jpg') no-repeat top center;
-        background-size: 100%;
+        background-size: auto 100%;
     }
 
     footer p {

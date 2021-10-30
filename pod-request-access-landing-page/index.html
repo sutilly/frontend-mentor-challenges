@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Frontend Mentor | Pod request access landing page</title>
+</head>
+<body>
+<main class="container">
+    <img src="assets/desktop/logo.svg" alt="Pod Brand Logo" id="logo">
+    <!-- Info Box -->
+    <div class="infobox">
+        <h1 class="infobox-title"><span class="text-primary">Publish your podcasts</span><br>everywhere.</h1>
+        <p class="infobox-text">Upload your audio to Pod with a single click. We’ll then distribute your podcast to
+            Spotify,
+            Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
+        <!-- Input Group -->
+        <form class="infobox-input-group">
+            <input type="email" id="email" name="email" aria-label="email" placeholder="Email address">
+            <button id="submit" class="submit-btn" type="submit">Request Access</button>
+            <small id="input-error" class="input-error hidden">Error Message</small>
+        </form>
+        <!-- Podcast Service List -->
+        <ul class="infobox-podcast-list">
+            <li class="podcast-list-item"><a href="#"><img class="list-item-logo" src="assets/desktop/spotify.svg"
+                                                           alt="Spotify Logo"></a></li>
+            <li class="podcast-list-item"><a href="#"><img class="list-item-logo" src="assets/desktop/apple-podcast.svg"
+                                                           alt="Apple Podcast Logo"></a></li>
+            <li class="podcast-list-item"><a href="#"><img class="list-item-logo"
+                                                           src="assets/desktop/google-podcasts.svg"
+                                                           alt="Google Podcast Logo"></a></li>
+            <li class="podcast-list-item"><a href="#"><img class="list-item-logo" src="assets/desktop/pocket-casts.svg"
+                                                           alt="Pocket Casts Logo"></a></li>
+        </ul>
+    </div>
+    <div class="pattern" role="presentation" title="dot pattern"></div>
+</main>
+
+<script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>
