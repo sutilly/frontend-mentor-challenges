@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
     emailInput.addEventListener('blur', () => {
-
+        errorMessage.classList.add('hidden');
     })
 
     function validateEmail() {
