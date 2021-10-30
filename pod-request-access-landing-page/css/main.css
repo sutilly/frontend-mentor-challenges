@@ -175,6 +175,7 @@ input::placeholder {
     width: 14.5rem;
     height: 6.5rem;
     background: url("../assets/desktop/bg-pattern-dots.svg") no-repeat;
+    z-index: 200;
 }
 
 .hidden {
@@ -208,6 +209,7 @@ input::placeholder {
 
     .infobox-text {
         width: 27.8rem;
+        max-width: 95%;
     }
 
     .podcast-list-item {
