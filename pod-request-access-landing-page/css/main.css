@@ -150,7 +150,7 @@ input::placeholder {
 .infobox-input-group {
     width: 26.6875rem;
     margin-top: 2.5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3.5rem;
     position: relative;
 }
 
@@ -166,6 +166,10 @@ input::placeholder {
     align-items: center;
     width: 33.5rem;
     max-width: 100%;
+}
+
+.list-item-logo {
+    color: var(--clr-secondary-medium)
 }
 
 .pattern {
