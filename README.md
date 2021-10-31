@@ -14,3 +14,4 @@ Work in progress :construction:
 | HTML--CSS      |  Stats preview card component | [Live Site](https://sutilly-frontend-mentor-stats-preview.netlify.app/) | [Code](https://github.com/sutilly/frontend-mentor-challenges/tree/main/stats-preview-card-component-main) |
 | HTML--CSS      | Order summary component  | [Live Site](https://sutilly-frontend-mentor-order-summary.netlify.app/) | [Code](https://github.com/sutilly/frontend-mentor-challenges/tree/main/order-summary-component-main) |
 | HTML--CSS      | Profile Card Component  | [Live Site](https://sutilly-profile-card-component.netlify.app/) | [Code](https://github.com/sutilly/frontend-mentor-challenges/tree/main/profile-card-component-main) |
+| HTML--CSS      | 3-Column Preview Card Component  | [Live Site](https://sutilly-frontend-mentor-3-card-component.netlify.app) | [Code](https://github.com/sutilly/frontend-mentor-challenges/tree/main/3-column-preview-card-component-main) |
