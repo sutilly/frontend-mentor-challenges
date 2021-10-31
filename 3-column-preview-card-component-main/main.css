@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --clr-primary: hsl(31, 77%, 52%);
+    --clr-secondary: hsl(184, 100%, 22%);
+    --clr-tertiary: hsl(179, 100%, 13%);
+    --clr-white-transparent: hsla(0, 0%, 100%, 0.75);
+    --clr-light-grey: hsl(0, 0%, 95%);
+    --font-family-main: 'Lexend Deca', sans-serif;
+    --font-family-headings: 'Big Shoulders Display', cursive;
+}
+
+*,*::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+
+body {
+    font-size: 0.9375rem;
+    font-family: var(--font-family-main);
+    font-weight:400;
+    background-color: var(--clr-light-grey);
+}
+
+/* Typography */
+
+h1 {
+    font-family: var(--font-family-headings);
+    font-size: 2rem;
+    color: var(--clr-light-grey);
+    text-transform: uppercase;
+    margin-top: 2.1rem;
+    margin-bottom: 2.1rem;
+}
+
+p {
+    color: var(--clr-white-transparent);
+    line-height: 1.6rem;
+}
+
+.text-primary {
+    color: var(--clr-primary);
+}
+
+.text-secondary {
+    color: var(--clr-secondary);
+}
+
+.text-tertiary {
+    color: var(--clr-tertiary);
+}
+
+/* Component */
+
+.container {
+    width: 20.25rem;
+    margin: 5.5rem auto;
+    background-color: var(--clr-light-grey);
+}
+
+.car-list {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.car-list:first-child {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.car-list:last-child {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.card {
+    padding: 3rem;
+}
+
+button {
+    outline: none;
+    border: none;
+    background-color: var(--clr-light-grey);
+    width: 9.1875rem;
+    height: 3rem;
+    text-align: center;
+    letter-spacing: 0.05rem;
+    border-radius: 1.5rem;
+    margin-top: 1.875rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 2px solid var(--clr-light-grey);
+    color: var(--clr-light-grey);
+}
+
+
+#sedan {
+    background-color: var(--clr-primary);
+}
+
+#suv {
+    background-color: var(--clr-secondary);
+}
+
+#luxury {
+    background-color: var(--clr-tertiary);
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .container {
+        width: 57.5rem;
+        max-width: 86%;
+        height: 100vh;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .car-list {
+        flex-direction: row;
+    }
+
+    button {
+        margin-top: 4.5rem;
+    }
+}
